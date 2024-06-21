@@ -36,3 +36,38 @@
     transform: rotate(360deg);
   }
 }
+
+/* Styles pour le CV */
+.App {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.profile-picture {
+  display: block;
+  margin: 0 auto 20px;
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+}
+
+section {
+  margin-bottom: 20px;
+}
+
+section h2 {
+  border-bottom: 2px solid #333;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+}
+
+footer {
+  text-align: center;
+  margin-top: 20px;
+}
+
