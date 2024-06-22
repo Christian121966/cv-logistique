@@ -1,8 +1,9 @@
 import React from 'react';
 import './App.css';
-import Header from './components/Header';
+//import Header from './components/Header';
 import Footer from './components/Footer';
 import Section from './components/Section';
+import Sidebar from './components/Sidebar';
 //import ProfilePicture from './components/ProfilePicture';
 import cvData from './data/cvData';
 //import profileImage from './path/to/photo.jpg'; // Assurez-vous de mettre la photo dans le bon chemin
@@ -10,8 +11,12 @@ import cvData from './data/cvData';
 function App() {
   return (
     <div className="App">
-      <Header />
+      {/*<Header />*/}
       {/*<ProfilePicture src={profileImage} />*/}
+      <div className="container">
+      
+        <Sidebar />
+      
       <main>
         <Section title="Formation">
           {cvData.formation.map((item, index) => (
@@ -42,6 +47,7 @@ function App() {
           ))}
         </Section>
       </main>
+      </div>
       <Footer />
     </div>
   );

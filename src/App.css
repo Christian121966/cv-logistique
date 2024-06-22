@@ -48,6 +48,10 @@ header {
   margin-bottom: 20px;
 }
 
+a {
+  color: #fff;
+}
+
 .profile-picture {
   display: block;
   margin: 0 auto 20px;
@@ -56,6 +60,43 @@ header {
   height: 150px;
 }
 
+.container {
+  display: flex;
+  width: 100%; /* Assurez-vous que le conteneur prend toute la largeur de son parent */
+
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  background: #444;
+  color: #fff;
+  padding: 1rem;
+}
+
+/* Media query pour les écrans jusqu'à 425px */
+@media (max-width: 425px) {
+  .sidebar {
+      width: 100%; /* La sidebar prend toute la largeur */
+      padding: 0.5rem; /* Réduire le padding pour économiser de l'espace */
+  }
+}
+
+/* Media query pour les écrans jusqu'à 375px */
+@media (max-width: 375px) {
+  .sidebar {
+      width: 100%; /* La sidebar prend toute la largeur */
+      padding: 0.5rem; /* Réduire encore le padding */
+      font-size: 0.7rem; /* Réduire la taille de la police pour les petits écrans */
+  }
+}
+
+main {
+  width: 75%;
+  padding: 20px; /* Ajoutez du padding pour un meilleur rendu */
+  /* Styles supplémentaires pour main */
+}
+}
 section {
   margin-bottom: 20px;
 }
