@@ -18,14 +18,14 @@ const Sidebar = () => {
       <ul>
         <li>
           <h3>Communication multilingue</h3> 
-          <span>Maîtrise du français, de l'anglais et de l'espagnol, avec expérience en traduction technique et en communication interculturelle.</span>
+          <span>Maîtrise du français, Anglais scolaire.</span>
           </li>
       </ul>
       <h2>Logiciel et environnements</h2>
       <ul>
         <li>
           <h3>Microsoft Office Suite</h3>
-          <span>Utilisation avancée d'Excel, PowerPoint, et Word pour la gestion de données, la présentation d'informations et la documentation.</span>
+          <span>Utilisation d'Excel, PowerPoint, et Word pour la gestion de données, la présentation d'informations et la documentation.</span>
         </li>
         <li>
           <h3>Environnements de développement</h3> 

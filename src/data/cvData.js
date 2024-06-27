@@ -45,15 +45,12 @@ const cvData = {
         details: ["Livraison de pneus en Ile de France, gestion des commandes et des stocks"]
       },
       {
-        date: "2019 - 2021",
+        date: "2019 - 2021", 
         title: "Gérant de Ecomexpress 75 - Paris",
         details: [
-          { highlight: "Livraison de colis en partenariat avec Colisweb", list: ["Darty", "FNAC", "Leroy Merlin", "Boulanger"] },
-          "Facturation des clients",
-          "gestion des charges (Urssaf, TVA, salaires)",
-          "management d’une équipe de chauffeurs (organisation et suivi des tournées et livraisons, planification)",
-          { highlight: "Livraison avec SVP", description: "Livraison de sacoches de documents dans les banques sous forme de tournée." },
-          { highlight: "Livraison avec CG Courses", description: "Livraison en région et à l'international" }
+          { highlight: "Livraison de colis en partenariat avec Colisweb"},
+          { highlight: "Livraison avec SVP"}, 
+          { highlight: "Livraison avec CG Courses"}
         ]
       }
     ]
