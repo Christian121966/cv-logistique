@@ -12,18 +12,55 @@
   font-family: 'Roboto', sans-serif;
 }
 
+header.cv-title {
+  display: flex;
+    justify-content: center;
+    position: relative;
+    top: 185px;
+    left: 105px;
+}
+
 .container {
   display: flex;
   padding: 20px;
+}
+
+.cv-title h1 {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid color var(--color-accent); /* The cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .05em; /* Adjust as needed */
+  position: absolute;
+    left: 305px;
+    top: -50px;
+  animation: 
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end 3;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% {color: var(--color-accent); }
+}
+
+main {
+  margin-top: 225px; /* Espace entre le titre et le contenu principal */
 }
 
 .card {
   background: var(--color-background);
   border: 1px solid var(--color-accent);
   border-radius: 8px;
-  padding: 20px;
-  margin: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 50px;
+  padding: 15px;
 }
 
 .card h3 {
@@ -37,6 +74,23 @@ ul {
 
 li {
   padding: 5px 0;
+}
+
+strong {
+  color: var(--color-accent);
+}
+
+/* App.css */
+.card div, .card h3, .card ul, .card li {
+  margin-bottom: 15px; /* Ajoute un espace en bas de chaque élément */
+}
+
+.card ul {
+  padding-left: 20px; /* Ajoute un padding à gauche pour les listes */
+}
+
+.card li {
+  list-style-type: none; /* Enlève les puces des listes */
 }
 
 /* App.css */
@@ -63,7 +117,7 @@ a {
 
 a:hover {
   color: rgba(255, 255, 255, 1); 
-  text-decoration: none; /* Optionnel: enlever le soulignement au survol */
+  text-decoration: none; 
 }
 
 a:active {

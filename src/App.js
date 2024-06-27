@@ -3,46 +3,32 @@ import './App.css';
 import Footer from './components/Footer';
 import Section from './components/Section';
 import Sidebar from './components/Sidebar';
-import cvData from './data/cvData';
+import Formation from './components/Formation';
+import CompetencesTechniques from './components/CompetencesTechniques';
+import ExperiencesProfessionnelles from './components/ExperiencesProfessionnelles';
 
 function App() {
   return (
     <div className="App">
+      <header className="cv-title">
+        <h1>Développeur - intégrateur Web</h1>
+      </header>
       <div className="container">
         <Sidebar />
         <main>
           <div className="card">
             <Section title="Formation">
-              {cvData.formation.map((item, index) => (
-                <div key={index}>
-                  <strong>{item.date}</strong>: {item.title} - {item.details}
-                </div>
-              ))}
+              <Formation />
             </Section>
           </div>
           <div className="card">
             <Section title="Compétences Techniques">
-              <h3>Développement Web</h3>
-              <ul>
-                {cvData.competences.developpementWeb.map((item, index) => (
-                  <li key={index}>{item}</li>
-                ))}
-              </ul>
-              <h3>Logistique</h3>
-              <ul>
-                {cvData.competences.logistique.map((item, index) => (
-                  <li key={index}>{item}</li>
-                ))}
-              </ul>
+              <CompetencesTechniques />
             </Section>
           </div>
           <div className="card">
             <Section title="Expériences Professionnelles">
-              {cvData.experiences.map((item, index) => (
-                <div key={index}>
-                  <strong>{item.date}</strong>: {item.title} - {item.details}
-                </div>
-              ))}
+              <ExperiencesProfessionnelles />
             </Section>
           </div>
         </main>
