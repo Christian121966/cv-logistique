@@ -3,7 +3,7 @@ import React from 'react';
 const Sidebar = () => {
   return (
     <aside className="sidebar">
-      <img src="/images/Chris.png" alt="Chris" className="profile-photo" />
+      <img src={`${process.env.PUBLIC_URL}/images/Chris.png`} alt="Chris" className="profile-photo" />
       <h1>Christian Boissy</h1>
       <address>
         8, rue du Moulin, 78130 Les Mureaux<br />
@@ -37,7 +37,7 @@ const Sidebar = () => {
           </li>
         <li>
           <h3>Outils de versioning</h3>
-          <span>Compétence dans l'utilisation de Git pour le contrôle de version et la collaboration en équipe.</span>
+          <span>Utilisation de Git pour le contrôle de version et la collaboration en équipe.</span>
         </li>
       </ul>
       <h2>Qualités humaines</h2>
@@ -52,7 +52,7 @@ const Sidebar = () => {
         </li>
         <li>
           <h3>Leadership</h3> 
-          <span>Expérience en tant que chef de projet, guidant les équipes vers la réalisation des objectifs.</span>
+          <span>Expérience en tant que chef d'entreprise, guidant les équipes vers la réalisation des objectifs.</span>
         </li>
         <li>
           <h3>Résolution de problèmes</h3> 

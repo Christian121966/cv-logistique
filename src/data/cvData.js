@@ -9,12 +9,7 @@ const cvData = {
         title: "Capacité de transport de marchandises",
       },
       {
-        title: "CACES 2, 3 et 5",
-        
-      },
-      {
-        title: "DUT Gestion, Comptabilité, Dakar"
-        
+        title: "DUT Gestion, Comptabilité"
       }
     ],
     competences: {
@@ -29,12 +24,9 @@ const cvData = {
         "Capacité de transport de marchandises :",
         "Gestion d'une société de transport de marchandises",
         "Gestion de personnel",
-        "CACES 1, 2, 3 & 5 :",
-        "Conduite de chariots élèvateurs",
-        "Préparateur de commandes - Gestionnaire de stocks",
+        "Gestion des stocks",
         "Communication :",
         "Gestion des contacts",
-        "Gestion des commandes",
         "Gestion du personnel"
       ]
     },
@@ -42,7 +34,9 @@ const cvData = {
       {
         date: "Déc. 2021 - Juin 2022",
         title: "First Stop Sartrouville - Herblay",
-        details: ["Livraison de pneus en Ile de France, gestion des commandes et des stocks"]
+        details: [
+          { highlight: "Livraison de pneus en Ile de France, gestion des commandes et des stocks" },
+        ]
       },
       {
         date: "2019 - 2021", 

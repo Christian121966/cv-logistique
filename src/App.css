@@ -1,4 +1,6 @@
-/* App.css */
+@import 'animate.css/animate.min.css';
+
+/* Variables de couleurs */
 :root {
   --color-background: rgba(35, 40, 45, 1);
   --color-text: rgba(255, 255, 255, 1);
@@ -6,100 +8,22 @@
   --color-hover: rgba(95, 105, 115, 1);
 }
 
-.App {
+/* Styles globaux */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
   background-color: var(--color-background);
   color: var(--color-text);
   font-family: 'Roboto', sans-serif;
-}
-
-header.cv-title {
-  display: flex;
-    justify-content: center;
-    position: relative;
-    top: 185px;
-    left: 155px;
-}
-
-header h1 {
-  color: var(--color-accent);
-}
-
-.sidebar h2 {
   margin: 0;
-  color: deepskyblue;
-}
-
-.sidebar h3 {
-  font-size: 1.17em; 
-  margin-bottom: 0;
-}
-
-.container {
-  display: flex;
-  padding: 20px;
-}
-
-main {
-  margin-top: 225px; 
-}
-
-section h2 {
-  color: deepskyblue;
-}
-
-.card {
-  background: var(--color-background);
-  border: 1px solid var(--color-accent);
-  border-radius: 8px;
-  margin: 50px;
-  padding: 15px;
-}
-
-.card h3 {
-  color: var(--color-accent);
-}
-
-ul {
-  list-style-type: none;
   padding: 0;
-  margin-top: 0;
-}
-
-li {
-  padding: 5px 0;
-}
-
-strong {
-  color: var(--color-accent);
-}
-
-/* App.css */
-.card div, .card h3, .card ul, .card li {
-  margin-bottom: 15px; /* Ajoute un espace en bas de chaque élément */
-}
-
-.card ul {
-  padding-left: 20px; /* Ajoute un padding à gauche pour les listes */
-}
-
-.card li {
-  list-style-type: none; /* Enlève les puces des listes */
-}
-
-/* App.css */
-.sidebar {
-  width: 35%; /* Définit la largeur de l'aside */
-  display: flex;
-  flex-direction: column;
-  padding: 20px;
-  background: var(--color-background); /* Utilise la couleur de fond définie dans :root */
-}
-
-.profile-photo {
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  margin-bottom: 20px;
+  overflow-x: hidden; /* Empêche le défilement horizontal */
 }
 
 a {
@@ -117,9 +41,260 @@ a:active {
   color: rgba(140, 150, 160, 1); /* Un gris plus foncé lors du clic */
 }
 
+
+header.cv-title {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: 185px;
+  left: 155px;
+}
+
+header h1 {
+  color: var(--color-accent);
+}
+
+address {
+  margin-bottom: 25px;
+}
+
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+  width: 100%; /* Assurez-vous que le conteneur ne dépasse pas la largeur de l'écran */
+}
+
+.sidebar {
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  background: var(--color-background);
+}
+
+ul {
+  list-style-type: none;
+  margin-bottom: 25px;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+.sidebar h2 {
+  margin: 0;
+  color: deepskyblue;
+  margin-bottom: 15px;
+}
+
+.sidebar h3 {
+  font-size: 1.17em; 
+  margin-bottom: 0;
+}
+
+.profile-photo {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+
+main {
+  flex: 1;
+  margin-top: 225px;
+  padding: 20px;
+  width: 100%; /* Assurez-vous que le main ne dépasse pas la largeur de l'écran */
+}
+
+section h2 {
+  color: deepskyblue;
+}
+
+.card {
+  background: var(--color-background);
+  border: 1px solid var(--color-accent);
+  border-radius: 8px;
+  margin: 50px 0;
+  padding: 15px;
+}
+
+.card div,
+.card h3,
+.card ul,
+.card li {
+  margin-bottom: 15px;
+}
+
+.card h3 {
+  color: var(--color-accent);
+}
+
+.card ul {
+  list-style-type: none;
+  padding-left: 20px;
+}
+
+.card li {
+  padding: 5px 0;
+  list-style-type: none;
+}
+
+strong {
+  color: var(--color-accent);
+}
+
 footer {
   padding: 20px;
   text-align: center;
   background: var(--color-background);
   color: var(--color-text);
+}
+
+
+/* Media Queries */
+@media screen and (max-width: 320px) {
+  body, #root {
+    width: 100%;
+    overflow-x: hidden; /* Empêche le défilement horizontal */
+  }
+
+  header.cv-title {
+    top: 195px;
+    left: 0;
+    margin-bottom: 5px;
+    width: 100%;
+    text-align: center; /* Centrer le texte */
+  }
+
+  header h1 {
+    font-size: 1em;
+  }
+
+  .container {
+    flex-direction: column;
+    padding: 10px; /* Ajuster le padding */
+  }
+
+  .sidebar {
+    width: 100%;
+    font-size: 0.8em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2px;
+  }
+  h1 {
+    margin-top: 20px;
+  }
+
+  .profile-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+  }
+
+  .sidebar h2 {
+    font-size: 1.1em;
+    text-align: center;
+  }
+
+  ul {
+    text-align: center;
+    list-style-type: none;
+    overflow-x: hidden;
+    padding: 20px;
+  }
+
+  main {
+    margin: 0;
+    padding: 15px; 
+  }
+
+  section {
+    margin-top: 10px;
+  }
+
+  section h2 {
+    font-size: 1.2em;
+  }
+
+  /*.card {
+    margin: 5px;
+  }*/
+
+  .card div, .card ul {
+    font-size: 0.9em;
+  }
+
+  .card h3 {
+    font-size: 1.1em;
+  }
+
+  p {
+    font-size: 0.6em;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .sidebar {
+    width: 100%;
+    font-size: 0.8em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2px;
+  }
+
+  .profile-photo {
+    width: 210px;
+    height: 210px;
+    position: relative;
+    top: -40px;
+  }
+
+  header.cv-title {
+    top: 240px;
+    left: 0px;
+    text-align: center;
+  }
+
+  header h1 {
+    font-size: 1.2em;
+    position: absolute;
+    top: -5px;
+  }
+
+  main {
+    margin: 0;
+    padding: 0;
+  }
+
+  .sidebar {
+    width: 100%;
+    padding: 20px;
+  }
+
+  address {
+    font-size: 1.2em;
+  }
+
+  ul {
+    text-align: center;
+  }
+
+  .card {
+    margin: 0 0 25px 0;
+  }
+
+  section h2 {
+    margin: 0 0 10px 0;
+  }
+
+  .card div {
+    text-align: center;
+  }
 }
