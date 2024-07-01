@@ -6,11 +6,10 @@ import Sidebar from './components/Sidebar';
 import Formation from './components/Formation';
 import CompetencesTechniques from './components/CompetencesTechniques';
 import ExperiencesProfessionnelles from './components/ExperiencesProfessionnelles';
-import 'animate.css/animate.min.css';
 
 function App() {
   return (
-    <div className="App animate__animated animate__fadeInUp">
+    
     <div className="App">
       
       <header className="cv-title">
@@ -38,7 +37,7 @@ function App() {
       </div>
       <Footer />
     </div>
-    </div>
+    
   );
 }
 

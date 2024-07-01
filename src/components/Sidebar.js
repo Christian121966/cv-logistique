@@ -19,7 +19,7 @@ const Sidebar = () => {
         <li>
           <h3>Communication multilingue</h3> 
           <span>Maîtrise du français, Anglais scolaire.</span>
-          </li>
+        </li>
       </ul>
       <h2>Logiciel et environnements</h2>
       <ul>
