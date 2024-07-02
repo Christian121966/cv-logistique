@@ -75,7 +75,7 @@ body {
       }
 
       address {
-        margin-top: 15px;
+        margin-top: 0;
 
         a {
           color: mediumaquamarine;
@@ -126,6 +126,7 @@ body {
     div, ul {
       font-size: 0.9em;
       list-style-type: none;
+      margin-bottom: 10px;
     }
 
     h2 {
@@ -161,7 +162,7 @@ body {
   body {
     header.cv-title {
       position: relative;
-      top: 185px;
+      top: 190px;
       left: 0;
       margin-bottom: 2px;
       text-align: center;
@@ -202,7 +203,7 @@ body {
       }
 
       address {
-        margin-top: 15px;
+        margin-top: 0;
 
         a {
           color: mediumaquamarine;

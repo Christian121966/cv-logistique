@@ -39,12 +39,21 @@ const cvData = {
         ]
       },
       {
-        date: "2019 - 2021", 
-        title: "Gérant de Ecomexpress 75 - Paris",
+        date: "2007 - 2021", 
+        title: "Gérant de société de transport - Paris",
         details: [
           { highlight: "Livraison de colis en partenariat avec Colisweb"},
           { highlight: "Livraison avec SVP"}, 
           { highlight: "Livraison avec CG Courses"}
+        ]
+      },
+      {
+        date: "1999 - 2007",
+        title: "Cariste gestionnaire de stocks - Rougier Panneaux - Gennevilliers",
+        details: [
+          { highlight: "Chargement et déchargemement de colis de panneaux de bois"},
+          { highlight: "Gestion du stock"}, 
+          { highlight: "Préparation des commandes"}
         ]
       }
     ]

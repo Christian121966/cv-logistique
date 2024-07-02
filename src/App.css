@@ -62,7 +62,7 @@ body .container .sidebar .profile-photo {
   margin-bottom: 30px;
 }
 body .container .sidebar address {
-  margin-top: 15px;
+  margin-top: 0;
 }
 body .container .sidebar address a {
   color: mediumaquamarine;
@@ -102,6 +102,7 @@ body .card {
 body .card div, body .card ul {
   font-size: 0.9em;
   list-style-type: none;
+  margin-bottom: 10px;
 }
 body .card h2 {
   color: rgb(120, 130, 140);
@@ -128,7 +129,7 @@ body footer p {
 @media screen and (max-width: 425px) {
   body header.cv-title {
     position: relative;
-    top: 185px;
+    top: 190px;
     left: 0;
     margin-bottom: 2px;
     text-align: center;
@@ -164,7 +165,7 @@ body footer p {
     margin-bottom: 30px;
   }
   body .sidebar address {
-    margin-top: 15px;
+    margin-top: 0;
   }
   body .sidebar address a {
     color: mediumaquamarine;
