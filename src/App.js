@@ -12,7 +12,7 @@ function App() {
     
     <div className="App">
       <header className="cv-title">
-        <h1>Développeur - intégrateur Web</h1>
+        <h1>Logisticien</h1>
       </header>
       <div className="container">
         <Sidebar />
