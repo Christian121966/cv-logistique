@@ -9,10 +9,9 @@ import ExperiencesProfessionnelles from './components/ExperiencesProfessionnelle
 
 function App() {
   return (
-    
     <div className="App">
       <header className="cv-title">
-        <h1>Logisticien</h1>
+        <h1>Développeur - intégrateur Web</h1>
       </header>
       <div className="container">
         <Sidebar />
@@ -36,7 +35,6 @@ function App() {
       </div>
       <Footer />
     </div>
-    
   );
 }
 

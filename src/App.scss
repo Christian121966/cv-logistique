@@ -72,10 +72,19 @@ body {
         height: 150px;
         border-radius: 50%;
         margin-bottom: 30px;
+        cursor: pointer;
+        transition: width 0.3s ease, height 0.3s ease;
+      }
+
+      .profile-photo:hover {
+        width: 360px;
+        height: 360px;
+        border-radius: 50%;
+        margin-bottom: 30px;
       }
 
       address {
-        margin-top: 0;
+        margin-top: 15px;
 
         a {
           color: mediumaquamarine;
@@ -84,17 +93,19 @@ body {
 
       ul {
         list-style-type: none;
+        text-align: center;
 
         h3 {
           margin: 15px 0 15px 0;
           color: deepskyblue;
-          text-align: start !important;
+          //text-align: start !important;
         }
 
         li {
           display: flex; 
           flex-direction: column;
           margin-bottom: 10px;
+          overflow-y: auto;
           
           li > span {
             display: block; /* Assurez-vous que span est affiché comme bloc */
@@ -364,7 +375,7 @@ body {
   body {
     header.cv-title {
       top: 170px;
-      left: 250px;
+      left: 400px;
       margin-bottom: 25px;
       overflow-y: hidden;
       overflow-x: hidden;
