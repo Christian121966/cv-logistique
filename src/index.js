@@ -2,6 +2,13 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css'; 
 import App from './App';
+import ReactGA from 'react-ga4';
+
+ReactGA.initialize('G-K4EJ3NRTQS', {
+  cookieFlags: 'SameSite=None; Secure'
+});
+
+ReactGA.send('pageview');
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

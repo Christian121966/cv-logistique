@@ -1,4 +1,21 @@
 import React from 'react';
+import ReactGA from 'react-ga4';
+
+function handleEmailClick() {
+  ReactGA.event({
+    category: 'User',
+    action: 'Clicked on Email Link',
+    label: 'Email'
+  });
+}
+
+function handleLinkedInClick() {
+  ReactGA.event({
+    category: 'User',
+    action: 'Clicked on LinkedIn Link',
+    label: 'LinkedIn'
+  });
+}
 
 const Sidebar = () => {
   return (
@@ -7,16 +24,16 @@ const Sidebar = () => {
       <h1>Christian Boissy</h1>
       <address>
         Tel : 0669311966<br />
-        <a href="mailto:boissychristian@gmail.com">boissychristian@gmail.com</a><br />
-        <a href="https://linkedin.com/in/christian-boissy-272b68181" target="_blank" rel="noopener noreferrer">
+        <a href="mailto:boissychristian@gmail.com" onClick={handleEmailClick}>boissychristian@gmail.com</a><br />
+        <a href="https://linkedin.com/in/christian-boissy-272b68181" target="_blank" rel="noopener noreferrer" onClick={handleLinkedInClick}>
           linkedin.com/in/christian-boissy-272b68181
-          <p>Permis B - Véhicule</p>  
+          <p>Permis B - Véhicule</p>
         </a>
       </address>
       <h2>Compétences professionnelles et linguistiques</h2>
       <ul>
         <li>
-          <h3>Communication multilingue</h3> 
+          <h3>Communication multilingue</h3>
           <span>Maîtrise du français, Anglais scolaire.</span>
         </li>
       </ul>
@@ -27,13 +44,13 @@ const Sidebar = () => {
           <span>Utilisation d'Excel, PowerPoint, et Word pour la gestion de données, la présentation d'informations et la documentation.</span>
         </li>
         <li>
-          <h3>Environnements de développement</h3> 
+          <h3>Environnements de développement</h3>
           <span>Maîtrise de Visual Studio Code pour le développement de logiciels.</span>
-          </li>
+        </li>
         <li>
           <h3>Systèmes d'exploitation</h3>
           <span>Expérience avec Windows, macOS, et Linux pour le déploiement d'applications et la gestion de serveurs.</span>
-          </li>
+        </li>
         <li>
           <h3>Outils de versioning</h3>
           <span>Utilisation de Git pour le contrôle de version et la collaboration en équipe.</span>
@@ -42,23 +59,23 @@ const Sidebar = () => {
       <h2>Qualités humaines</h2>
       <ul>
         <li>
-          <h3>Capacité d'adaptation</h3> 
+          <h3>Capacité d'adaptation</h3>
           <span>Aptitude à s'adapter rapidement aux nouvelles technologies et environnements de travail.</span>
         </li>
         <li>
-          <h3>Esprit d'équipe</h3> 
+          <h3>Esprit d'équipe</h3>
           <span>Collaboration efficace dans des équipes multidisciplinaires et multiculturelles.</span>
         </li>
         <li>
-          <h3>Leadership</h3> 
+          <h3>Leadership</h3>
           <span>Expérience en tant que chef d'entreprise, guidant les équipes vers la réalisation des objectifs.</span>
         </li>
         <li>
-          <h3>Résolution de problèmes</h3> 
+          <h3>Résolution de problèmes</h3>
           <span>Compétence avérée dans l'identification et la résolution de problèmes complexes de manière créative et efficace.</span>
         </li>
         <li>
-          <h3>Empathie</h3> 
+          <h3>Empathie</h3>
           <span>Forte capacité à comprendre et à répondre aux besoins des clients et des collègues.</span>
         </li>
       </ul>
