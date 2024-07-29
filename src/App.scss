@@ -413,8 +413,8 @@ body {
 @media screen and (min-width: 1024px) {
   body {
     header.cv-title {
-      top: 170px;
-      left: 400px;
+      top: 150px;
+      left: 575px;
       margin-bottom: 25px;
       overflow-y: hidden;
       overflow-x: hidden;
@@ -452,11 +452,20 @@ body {
       padding: 25px;
 
       div, ul {
-        font-size: 1.1em;
+        font-size: 1em;
+        color: #ccc;
+        font-style: italic;
+
+        .formation-title {
+          font-style: italic;
+          color: #ccc;
+          font-weight: normal;
+          font-size: 1em;
+        }
       }
 
       h3 {
-        font-size: 1.5em;
+        font-size: 1.05em;
       }
     }
 
