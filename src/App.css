@@ -123,6 +123,13 @@ body .card h3 {
 }
 body li {
   margin-bottom: 15px;
+  font-style: italic;
+  color: #ccc;
+}
+body .li_title {
+  font-weight: bold;
+  font-style: normal;
+  color: #fff;
 }
 body p {
   font-size: 1em;
@@ -210,9 +217,16 @@ body footer p {
     border: 1px solid rgb(120, 130, 140);
     border-radius: 8px;
   }
+  body .card .formation-date {
+    color: #fff;
+    font-style: normal;
+    font-size: 1.2em;
+  }
   body .card div, body .card ul {
     font-size: 0.9em;
     list-style-type: none;
+    color: #ccc;
+    font-style: italic;
   }
   body .card h3 {
     font-size: 1.2em;
@@ -232,18 +246,31 @@ body footer p {
 }
 /* Pour les écrans de 768px et plus */
 @media screen and (min-width: 768px) {
+  body {
+    margin: 0;
+    padding: 0;
+  }
   body header.cv-title {
+    position: relative;
     top: 140px;
-    left: 160px;
+    left: 50%;
+    transform: translateX(-50%);
     margin-bottom: 20px;
   }
   body header.cv-title h1 {
     font-size: 1.5em;
+    position: relative;
+    left: 185px;
   }
   body .container {
     display: flex;
     flex-direction: row;
+    justify-content: center; /* Centre les éléments horizontalement */
+    align-items: flex-start; /* Aligne les éléments au début du conteneur */
     padding: 25px;
+    max-width: 1023px; /* Définir une largeur maximale */
+    margin: 0 auto; /* Centre le conteneur dans la page */
+    box-sizing: border-box; /* Inclut les marges et les bordures dans la largeur totale */
   }
   body .sidebar {
     width: 35%;
@@ -253,6 +280,8 @@ body footer p {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
+    height: auto; /* Ajustement automatique de la hauteur */
+    margin-right: 25px;
   }
   body .sidebar .profile-photo {
     width: 180px;
@@ -263,9 +292,12 @@ body footer p {
   }
   body main {
     width: 65%;
+    max-height: 135vh;
+    overflow-y: auto;
     padding: 0 25px;
     display: flex;
     flex-direction: column;
+    align-items: flex-start; /* Aligne les éléments à gauche dans main */
     margin-top: 150px;
   }
   body section h2 {
@@ -280,12 +312,16 @@ body footer p {
   }
   body .card div, body .card ul {
     font-size: 0.9em;
+    font-style: italic;
+    color: #ccc;
   }
   body .card h3 {
     font-size: 1.4em;
   }
   body p {
-    font-size: 0.9em;
+    font-size: 1.2em;
+    color: #fff;
+    font-weight: bold;
   }
   footer {
     display: flex;

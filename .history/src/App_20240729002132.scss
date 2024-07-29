@@ -1,0 +1,438 @@
+/* Variables de couleurs */
+$color-background: rgba(35, 40, 45, 1);
+$color-text: rgba(255, 255, 255, 1);
+$color-accent: rgba(120, 130, 140, 1);
+$color-hover: rgba(95, 105, 115, 1);
+
+/* Mixins */
+@mixin global-reset {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  @include global-reset;
+}
+
+body {
+  background-color: $color-background;
+  color: $color-text;
+  font-family: 'Roboto', sans-serif;
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+
+  header.cv-title {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 185px;
+    left: 0;
+    margin-bottom: 2px;
+
+    h1 {
+      color: $color-accent;
+      font-size: 1em;
+    }
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      padding: 10px;
+    }
+  
+    .sidebar {
+      width: 100%;
+      font-size: 0.8em;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 2px;
+  
+      h2 {
+        font-size: 1.5em;
+        text-align: center;
+        margin: 15px 0 15px 0;
+        color: $color-accent;
+      }
+  
+      .profile-photo {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        margin-bottom: 30px;
+        cursor: pointer;
+        transition: width 0.3s ease, height 0.3s ease;
+      }
+
+      .profile-photo:hover {
+        width: 360px;
+        height: 360px;
+        border-radius: 50%;
+        margin-bottom: 30px;
+      }
+
+      address {
+        margin-top: 15px;
+
+        a {
+          color: mediumaquamarine;
+        }
+      }
+
+      ul {
+        list-style-type: none;
+        text-align: center;
+
+        h3 {
+          margin: 15px 0 15px 0;
+          color: deepskyblue;
+          //text-align: start !important;
+        }
+
+        li {
+          display: flex; 
+          flex-direction: column;
+          margin-bottom: 10px;
+          overflow-y: auto;
+          
+          li > span {
+            display: block; /* Assurez-vous que span est affiché comme bloc */
+            text-align: center; /* Exemple de centrage de span */
+            color: #777; /* Exemple de couleur de texte */
+          }
+        }
+      }
+    }
+  }
+
+
+  main {
+    margin: 0;
+  }
+
+  section h2 {
+    font-size: 1.2em;
+    margin: 15px 0 15px 0;
+  }
+
+  .card {
+    margin: 5px;
+    padding: 10px;
+    background: $color-background;
+    border: 1px solid $color-accent;
+    border-radius: 8px;
+
+    div, ul {
+      font-size: 0.9em;
+      list-style-type: none;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      color: $color-accent;
+    }
+
+    h3 {
+      font-size: 1.1em;
+      margin: 15px 0 15px 0;
+      color: deepskyblue;
+    }
+  }
+
+  li {
+    margin-bottom: 15px;
+    font-style: italic;
+    color: #ccc;
+  }
+
+  .li_title {
+    font-weight: bold;
+    font-style: normal;
+    color: #fff;
+  }
+
+  p {
+    font-size: 1em;
+  }
+
+  footer p {
+    font-size: 0.6em;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+}
+
+
+/* Pour les écrans de 320px à 425px */
+@media screen and (max-width: 425px) {
+  body {
+    header.cv-title {
+      position: relative;
+      top: 190px;
+      left: 0;
+      margin-bottom: 2px;
+      text-align: center;
+
+      h1 {
+        color: $color-accent;
+        font-size: 1.2em;
+      }
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      padding: 10px;
+    }
+
+    .sidebar {
+      width: 100%;
+      font-size: 0.8em;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 2px;
+
+      h2 {
+        font-size: 1.1em;
+        text-align: center;
+        margin: 15px 0;
+        color: $color-accent;
+      }
+
+      .profile-photo {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        margin-bottom: 30px;
+      }
+
+      address {
+        margin-top: 0;
+
+        a {
+          color: mediumaquamarine;
+        }
+      }
+
+      ul {
+        list-style-type: none;
+
+        h3 {
+          margin: 15px 0;
+          color: deepskyblue;
+          text-align: center;
+        }
+
+        li {
+          margin-bottom: 10px;
+          text-align: center;
+
+          span {
+            display: block;
+            color: #ccc;
+          }
+        }
+      }
+    }
+
+    main {
+      margin: 0;
+      padding: 15px;
+    }
+
+    section h2 {
+      font-size: 1.3em;
+      margin: 15px 0;
+    }
+
+    .card {
+      margin: 10px;
+      padding: 12px;
+      background: $color-background;
+      border: 1px solid $color-accent;
+      border-radius: 8px;
+
+      div, ul {
+        font-size: 0.9em;
+        list-style-type: none;
+      }
+
+      h3 {
+        font-size: 1.2em;
+        margin: 15px 0;
+        color: deepskyblue;
+      }
+    }
+
+    p {
+      font-size: 1em;
+    }
+
+    footer p {
+      font-size: 0.8em;
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      margin: 10px;
+    }
+  }
+}
+
+
+/* Pour les écrans de 768px et plus */
+@media screen and (min-width: 768px) {
+  body {
+    header.cv-title {
+      top: 140px;
+      left: 260px;
+      margin-bottom: 20px;
+
+      h1 {
+        font-size: 1.5em;
+      }
+    }
+
+    .container {
+      display: flex;
+      flex-direction: row;
+      padding: 25px;
+    }
+
+    .sidebar {
+      width: 35%;
+      font-size: 1.1em;
+      padding: 15px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      height: 170vh;
+
+      .profile-photo {
+        width: 180px;
+        height: 180px;
+      }
+
+      h2 {
+        font-size: 1.3em;
+      }
+    }
+
+    main {
+      width: 65%;
+      padding: 0 25px;
+      display: flex;
+      flex-direction: column;
+      margin-top: 150px;
+    }
+
+    section h2 {
+      font-size: 1.5em;
+    }
+
+    .card {
+      margin: 20px 0;
+      padding: 20px;
+      background: $color-background;
+      border: 1px solid $color-accent;
+      border-radius: 8px;
+
+      div, ul {
+        font-size: 0.90em;
+      }
+
+      h3 {
+        font-size: 1.4em;
+      }
+    }
+
+    p {
+      font-size: 0.9em;
+    }
+  }
+
+  footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+
+    p {
+      font-size: 0.8em;
+    }
+  }
+}
+
+
+/* Pour les écrans de 1024px et plus */
+@media screen and (min-width: 1024px) {
+  body {
+    header.cv-title {
+      top: 170px;
+      left: 400px;
+      margin-bottom: 25px;
+      overflow-y: hidden;
+      overflow-x: hidden;
+
+      h1 {
+        font-size: 1.7em;
+      }
+    }
+
+    .container {
+      padding: 30px;
+    }
+
+    .sidebar {
+      width: 35%;
+      font-size: 1.2em;
+      padding: 20px;
+
+      .profile-photo {
+        width: 190px;
+        height: 190px;
+      }
+
+      h2 {
+        font-size: 1.4em;
+      }
+    }
+
+    section h2 {
+      font-size: 1.6em;
+    }
+
+    .card {
+      margin: 25px 0;
+      padding: 25px;
+
+      div, ul {
+        font-size: 1.1em;
+      }
+
+      h3 {
+        font-size: 1.5em;
+      }
+    }
+
+    p {
+      font-size: 1em;
+    }
+  }
+}
+
