@@ -24,10 +24,17 @@ const cvData = {
       { title: false, text: "Utilisation de JavaScript pour créer de manière dynamique le site web d'un architecte" },
       { title: false, text: "Utiliser JavaScript pour générer du contenu dynamique et interactif sur un site web en communiquant avec une API." },
       { title: true, text: "React.js" },
+      { title: false, text: "Mise en place de composants et des routes de l'application avec React Router." },
+      { title: false, text: "Utilisation de React.js pour générer du contenu dynamique et interactif sur un site web en communiquant avec une API." },
+      { title: false, text: "Utilisation de hooks React pour gérer l'état et les effets secondaires dans les composants fonctionnels." },
       { title: true, text: "Responsive design" },
       { title: false, text: "Implémentation d'un site d'une plateforme de restauration en mobile-first avec SASS" },
       { title: false, text: "Couvrir les techniques de conception mobile first en utilisant SASS pour garantir un site optimisé pour les appareils mobiles avant de l'adapter aux écrans plus grands. Découvrir comment utiliser les fonctionnalités avancées de SASS comme les variables, les mixins, et les fonctions pour créer des styles modulaires et réutilisables." },
-      { title: true, text: "Optimisation SEO" }
+      { title: true, text: "Optimisation SEO" },
+      { title: false, text: "Mettre en place des balises de meta pour améliorer le classement d'un site web sur les moteurs de recherche" },
+      { title: false, text: "Utilisation de Wave pour évaluer et améliorer l'accessibilité du site web en identifiant et corrigeant les problèmes d'accessibilité conformément aux normes WCAG (Web Content Accessibility Guidelines)." },
+      { title: false, text: "Analyse des résultats de Wave pour assurer que le site est accessible aux utilisateurs avec des handicaps visuels, auditifs et moteurs." },
+      { title: false, text: "Utilisation de Google Lighthouse pour auditer la performance, l'accessibilité, le SEO et les meilleures pratiques de développement du site web." }
     ],
     logistique: [
       { title: true, text: "Capacité de transport de marchandises" },
