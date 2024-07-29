@@ -443,6 +443,11 @@ body {
       }
     }
 
+    main {
+      max-height: 125vh; 
+      overflow-y: auto;
+    }
+
     section h2 {
       font-size: 1.6em;
     }

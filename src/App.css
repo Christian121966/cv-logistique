@@ -360,6 +360,10 @@ body footer p {
   body .sidebar h2 {
     font-size: 1.4em;
   }
+  body main {
+    max-height: 125vh;
+    overflow-y: auto;
+  }
   body section h2 {
     font-size: 1.6em;
   }
