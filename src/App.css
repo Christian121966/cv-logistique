@@ -388,4 +388,40 @@ body footer p {
   body p {
     font-size: 1em;
   }
+}
+@media screen and (min-width: 1440px) {
+  body header.cv-title {
+    top: 150px;
+    left: 790px;
+    margin-bottom: 25px;
+    overflow-y: hidden;
+    overflow-x: hidden;
+  }
+  main {
+    max-height: 85vh;
+    overflow-y: auto;
+  }
+}
+@media screen and (min-width: 2560px) {
+  body {
+    font-size: 1.8em !important;
+  }
+  body .cv-title {
+    top: 365px !important;
+    left: 1790px !important;
+  }
+  body .container {
+    max-width: 2559px !important;
+    margin-top: 260px !important;
+  }
+  body main {
+    max-height: 65vh !important;
+    overflow-y: auto;
+  }
+  body main .card {
+    width: 30em !important;
+  }
+  body footer {
+    font-size: 1.5em !important;
+  }
 }/*# sourceMappingURL=App.css.map */

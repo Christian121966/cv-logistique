@@ -480,3 +480,48 @@ body {
   }
 }
 
+
+@media screen and (min-width: 1440px) {
+  body header.cv-title {
+    top: 150px;
+    left: 790px;
+    margin-bottom: 25px;
+    overflow-y: hidden;
+    overflow-x: hidden;
+  }
+
+  main {
+    max-height: 85vh; 
+    overflow-y: auto;
+  }
+}
+
+
+@media screen and (min-width: 2560px) {
+
+  body {
+    font-size: 1.8em !important;
+  .cv-title {
+    top: 365px !important;
+    left: 1790px !important;
+  }
+
+  .container {
+    max-width: 2559px !important;
+    margin-top: 260px !important;
+  }
+
+  main {
+    max-height: 65vh !important; 
+    overflow-y: auto;
+
+    .card {
+      width: 30em !important;
+    }
+  }
+
+  footer {
+    font-size: 1.5em !important;
+  }
+}
+}
