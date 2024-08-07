@@ -9,7 +9,7 @@ const cvData = {
       title: "Capacité de transport de marchandises",
     },
     {
-      date: "2004",
+      date: "2014",
       title: "DUT Gestion, Comptabilité"
     }
   ],
