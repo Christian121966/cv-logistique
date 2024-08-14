@@ -74,6 +74,7 @@ body .container .sidebar address {
 }
 body .container .sidebar address a {
   color: mediumaquamarine;
+  margin-left: 5px;
 }
 body .container .sidebar ul {
   list-style-type: none;

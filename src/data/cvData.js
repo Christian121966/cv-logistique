@@ -38,12 +38,16 @@ const cvData = {
     ],
     logistique: [
       { title: true, text: "Capacité de transport de marchandises" },
-      { title: false, text: "Gestion d'une société de transport de marchandises" },
+      { title: false, text: "Gestionnaire d'une société de transport de marchandises" },
       { title: false, text: "Gestion de personnel" },
-      { title: false, text: "Gestion des stocks" },
-      {title: true, text:"Communication" },
-      { title: false, text:"Gestion des contacts" },
-      { title: false, text:"Gestion du personnel" }
+      { title: false, text: "Gestion des stocks en utilisant les méthodes de gestion des stocks (LIFO, FIFO)" },
+      { title: false, text: "Optimisation des places de rangement" },
+      { title: false, text: "Chargement et déchargement - CACES 1 -3" },
+      { title: false, text: "Gestion des plannings" },
+      { title: true, text: "Communication" },
+      { title: false, text: "communication avec les donneurs d'ordre" },
+      { title: false, text: "gestion des litiges" },
+      { title: false, text: "communication avec le personnel" }
     ]
   },
   experiences: [
@@ -51,25 +55,28 @@ const cvData = {
       date: "Déc. 2021 - Juin 2022",
       title: "First Stop Sartrouville - Herblay",
       details: [
-        { highlight: "Livraison de pneus en Ile de France, gestion des commandes et des stocks" },
+        { highlight: "Gestion des stocks et optimisation des espaces de rangement" },
+        { highlight: "Chargement et déchargement de pneus" },
+        { highlight: "Gestion des commandes et dispatching des tâches" }
       ]
     },
     {
       date: "2007 - 2021", 
       title: "Gérant de société de transport - Paris",
       details: [
-        { highlight: "Livraison de colis en partenariat avec Colisweb"},
-        { highlight: "Livraison avec SVP"}, 
-        { highlight: "Livraison avec CG Courses"}
+        { highlight: "Gestion complète de la société de transport incluant la planification et l'organisation des équipes" },
+        { highlight: "Application des méthodes de gestion de stock comme LIFO et FIFO" },
+        { highlight: "Optimisation des processus de livraison et gestion des plannings" }
       ]
     },
     {
       date: "1999 - 2007",
       title: "Cariste gestionnaire de stocks - Rougier Panneaux - Gennevilliers",
       details: [
-        { highlight: "Chargement et déchargemement de colis de panneaux de bois"},
-        { highlight: "Gestion du stock"}, 
-        { highlight: "Préparation des commandes"}
+        { highlight: "Chargement et déchargement de panneaux de bois" },
+        { highlight: "Gestion du stock avec application des méthodes de gestion des stocks" },
+        { highlight: "Préparation des commandes avec optimisation des places de rangement" },
+        { highlight: "Gestion des plannings de chargement et déchargement" }
       ]
     }
   ]
