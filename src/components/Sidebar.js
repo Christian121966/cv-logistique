@@ -24,9 +24,9 @@ const Sidebar = () => {
       <h1>Christian Boissy</h1>
       <address>
         Tel : 0669311966<br />
-        <i class="fa-regular fa-envelope"></i>
+        <i className="fa-regular fa-envelope"></i>
         <a href="mailto:boissychristian@gmail.com" onClick={handleEmailClick}>boissychristian@gmail.com</a><br />
-        <i class="fa-brands fa-linkedin"></i>
+        <i className="fa-brands fa-linkedin"></i>
         <a href="https://linkedin.com/in/christian-boissy-272b68181" target="_blank" rel="noopener noreferrer" onClick={handleLinkedInClick}>
           linkedin.com/in/christian-boissy-272b68181
         </a>
